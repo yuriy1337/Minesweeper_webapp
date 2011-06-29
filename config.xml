@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns="http://www.w3.org/ns/widgets" height="200" id="http://Minesweeper" version="0.0.1" viewmodes="windowed fullscreen" width="200">
+    
+    <name short="Minesweeper">Minesweeper</name>    
+
+    <description>
+       Minesweeper Game!
+    </description>
+    
+    <!-- Note: Author href MUST BE Url encoded 
+        @see http://en.wikipedia.org/wiki/Percent-encoding -->    
+    <author email="yuriy1337+minesweeper@gmail.com" href="http://lhc.servegame.com">
+        Yuriy Myronchenko
+    </author>
+    
+    <icon src="icon.png"/>
+
+    <content src="index.html"/>
+    
+    <license>
+	   Copyright Foo Bar Corp, 2011.
+    </license>
+    
+   	<feature name="nokia://s40.nokia.com/SAWRT/1.0 " required="true" />
+</widget>

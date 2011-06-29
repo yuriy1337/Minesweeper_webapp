@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Minesweeper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/base_s40.css" type="text/css" />
+	<script type="text/javascript" src="js/minesweeper2.js"></script>
+    <meta name="Generator" content="Nokia WDE 3.2.0" />
+  </head>
+
+  <body>
+    <div class="header_background">
+      <table summary="Default Header Table" class="header_table" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="app_name">Minesweeper</td>
+          <td class="header_search"><img alt="Home" src="img/header_home.png" onclick="" /></td>
+        </tr>
+      </table>
+    </div>
+    <body onload="javascript:newgame()">
+    <div align="center">
+      <!-- Top Bar -->
+      <table width="160" border="0" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#BBBBBB" height="1">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="154" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+        <tr height="1">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="white"></td>
+          <td bgcolor="white"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+        <tr height="1">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+      </table><!-- Title -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr height="18">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td bgcolor="#000088">
+            <img src='img/minesweeper/title.gif'><img src=
+            'img/minesweeper/a.gif' height="1" width="8" name=
+            'titleBarEmptySpace'>
+          </td>
+          <td>
+            <img src='img/minesweeper/buttons.gif'>
+          </td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+      </table><!-- Menu Bar -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr height="20" bgcolor="#BBBBBB">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td>
+            <img src='img/minesweeper/menu.gif'>
+          </td>
+          <td>
+            <img src='img/minesweeper/a.gif' height="1" width="86" name=
+            'menuBarEmptySpace'>
+          </td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+      </table><!-- Mine Field -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr height="11" width="160">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td>
+            <img src='img/minesweeper/tl.gif'>
+          </td>
+          <td>
+            <img src='img/minesweeper/header.gif' width="130" height="11">
+          </td>
+          <td>
+            <img src='img/minesweeper/tr.gif'>
+          </td>
+          <td>
+            <img src='img/minesweeper/right.gif' width="5" height="11">
+          </td>
+        </tr>
+      </table>
+      <table width="160" border="0" cellspacing="0" cellpadding="0">
+        <tr height="33">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td>
+            <img src='img/minesweeper/cplleft.gif' height="33" width="11">
+          </td>
+          <td>
+            <!-- Control Panel -->
+            <table width="130" border="0" cellspacing="0" cellpadding="0">
+              <tr height="4" width="130">
+                <td bgcolor="#BBBBBB"></td>
+              </tr>
+            </table>
+            <table width="130" border="0" cellspacing="0" cellpadding="0">
+              <tr height="26">
+                <td width="5" bgcolor="#BBBBBB"></td>
+                <td>
+                  <!-- Mines Remaining -->
+                  <table width="41" border="0" cellspacing="0" cellpadding="0">
+                    <tr bgcolor="#888888">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td width="1" bgcolor="#BBBBBB"></td>
+                    </tr>
+                    <tr bgcolor="black">
+                      <td width="1" bgcolor="#888888"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td width="1" bgcolor="white"></td>
+                    </tr>
+                    <tr bgcolor="black">
+                      <td width="1" bgcolor="#888888"></td>
+                      <td width="1" bgcolor="black"></td>
+                      <td>
+                        <img src='img/minesweeper/0.gif' name='flag1'>
+                      </td>
+                      <td width="2"></td>
+                      <td>
+                        <img src='img/minesweeper/1.gif' name='flag2'>
+                      </td>
+                      <td width="2"></td>
+                      <td>
+                        <img src='img/minesweeper/0.gif' name='flag3'>
+                      </td>
+                      <td width="1"></td>
+                      <td width="1" bgcolor="white"></td>
+                    </tr>
+                    <tr bgcolor="black">
+                      <td width="1" bgcolor="#888888"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td width="1" bgcolor="white"></td>
+                    </tr>
+                    <tr bgcolor="white">
+                      <td width="1" bgcolor="#BBBBBB"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr bgcolor="#BBBBBB">
+                      <td width="1" bgcolor="#BBBBBB"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table><!-- End Mines Remaining -->
+                </td>
+                <td bgcolor="#BBBBBB">
+                  <img height="1" src='img/minesweeper/a.gif' width=
+                  "6name='cplLeft'">
+                </td>
+                <td>
+                  <img src='img/minesweeper/btnsmile.gif' name='condition'
+                  onmousedown=
+                  'document.images.condition.src="img/minesweeper/btnsmil2.gif";'
+                  onmouseup=
+                  'document.images.condition.src="img/minesweeper/btnsmile.gif";location.reload();;'>
+                </td>
+                <td width="4" bgcolor="#BBBBBB">
+                  <img height="1" src='img/minesweeper/a.gif' width="4">
+                </td>
+                <td>
+                  <!-- Elapsed Time -->
+                  <table width="41" border="0" cellspacing="0" cellpadding="0">
+                    <tr bgcolor="#888888">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td width="1" bgcolor="#BBBBBB"></td>
+                    </tr>
+                    <tr bgcolor="black">
+                      <td width="1" bgcolor="#888888"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td width="1" bgcolor="white"></td>
+                    </tr>
+                    <tr bgcolor="black">
+                      <td width="1" bgcolor="#888888"></td>
+                      <td width="1" bgcolor="black"></td>
+                      <td>
+                        <img src='img/minesweeper/0.gif' name='elapse1'>
+                      </td>
+                      <td width="2"></td>
+                      <td>
+                        <img src='img/minesweeper/0.gif' name='elapse2'>
+                      </td>
+                      <td width="2"></td>
+                      <td>
+                        <img src='img/minesweeper/0.gif' name='elapse3'>
+                      </td>
+                      <td width="1"></td>
+                      <td width="1" bgcolor="white"></td>
+                    </tr>
+                    <tr bgcolor="black">
+                      <td width="1" bgcolor="#888888"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td width="1" bgcolor="white"></td>
+                    </tr>
+                    <tr bgcolor="white">
+                      <td width="1" bgcolor="#BBBBBB"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr bgcolor="#BBBBBB">
+                      <td width="1" bgcolor="#BBBBBB"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table><!-- End Elapsed Time -->
+                </td>
+                <td width="7" bgcolor="#BBBBBB"></td>
+              </tr>
+            </table>
+            <table width="130" border="0" cellspacing="0" cellpadding="0">
+              <tr height="3">
+                <td bgcolor="#BBBBBB"></td>
+              </tr>
+            </table><!-- End Control Panel -->
+          </td>
+          <td>
+            <img src='img/minesweeper/cplright.gif' height="33" width="11">
+          </td>
+          <td>
+            <img src='img/minesweeper/right.gif' height="33" width="5">
+          </td>
+        </tr>
+      </table><!-- Separator -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr height="11" width="160">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td>
+            <img src='img/minesweeper/ml.gif'>
+          </td>
+          <td>
+            <img src='img/minesweeper/separatr.gif' width="128" height="11">
+          </td>
+          <td>
+            <img src='img/minesweeper/mr.gif'>
+          </td>
+          <td>
+            <img src='img/minesweeper/right.gif' width="5">
+          </td>
+        </tr>
+      </table><!-- Mine Field -->
+      <table width="160" border="0" cellspacing="0" cellpadding="0">
+        <tr height="128">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td>
+            <img src='img/minesweeper/fielside.gif' width="12" height="128">
+          </td>
+          <td>
+            <!-- Game Field --><!-- For Loop Start --><img src=
+            "img/minesweeper/sqt0.gif" name="grd0_0" id="grd0_0" border="0"
+            onclick="gridclick(0,0);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd0_1" id="grd0_1" border="0" onclick="gridclick(0,1);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd0_2" id="grd0_2" border="0"
+            onclick="gridclick(0,2);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd0_3" id="grd0_3" border="0" onclick="gridclick(0,3);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd0_4" id="grd0_4" border="0"
+            onclick="gridclick(0,4);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd0_5" id="grd0_5" border="0" onclick="gridclick(0,5);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd0_6" id="grd0_6" border="0"
+            onclick="gridclick(0,6);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd0_7" id="grd0_7" border="0" onclick="gridclick(0,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd1_0" id="grd1_0"
+            border="0" onclick="gridclick(1,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd1_1" id="grd1_1" border="0"
+            onclick="gridclick(1,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd1_2" id="grd1_2" border="0" onclick="gridclick(1,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd1_3" id="grd1_3" border="0"
+            onclick="gridclick(1,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd1_4" id="grd1_4" border="0" onclick="gridclick(1,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd1_5" id="grd1_5" border="0"
+            onclick="gridclick(1,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd1_6" id="grd1_6" border="0" onclick="gridclick(1,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd1_7" id="grd1_7" border="0"
+            onclick="gridclick(1,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd2_0" id="grd2_0"
+            border="0" onclick="gridclick(2,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd2_1" id="grd2_1" border="0"
+            onclick="gridclick(2,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd2_2" id="grd2_2" border="0" onclick="gridclick(2,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd2_3" id="grd2_3" border="0"
+            onclick="gridclick(2,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd2_4" id="grd2_4" border="0" onclick="gridclick(2,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd2_5" id="grd2_5" border="0"
+            onclick="gridclick(2,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd2_6" id="grd2_6" border="0" onclick="gridclick(2,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd2_7" id="grd2_7" border="0"
+            onclick="gridclick(2,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd3_0" id="grd3_0"
+            border="0" onclick="gridclick(3,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd3_1" id="grd3_1" border="0"
+            onclick="gridclick(3,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd3_2" id="grd3_2" border="0" onclick="gridclick(3,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd3_3" id="grd3_3" border="0"
+            onclick="gridclick(3,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd3_4" id="grd3_4" border="0" onclick="gridclick(3,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd3_5" id="grd3_5" border="0"
+            onclick="gridclick(3,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd3_6" id="grd3_6" border="0" onclick="gridclick(3,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd3_7" id="grd3_7" border="0"
+            onclick="gridclick(3,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd4_0" id="grd4_0"
+            border="0" onclick="gridclick(4,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd4_1" id="grd4_1" border="0"
+            onclick="gridclick(4,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd4_2" id="grd4_2" border="0" onclick="gridclick(4,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd4_3" id="grd4_3" border="0"
+            onclick="gridclick(4,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd4_4" id="grd4_4" border="0" onclick="gridclick(4,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd4_5" id="grd4_5" border="0"
+            onclick="gridclick(4,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd4_6" id="grd4_6" border="0" onclick="gridclick(4,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd4_7" id="grd4_7" border="0"
+            onclick="gridclick(4,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd5_0" id="grd5_0"
+            border="0" onclick="gridclick(5,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd5_1" id="grd5_1" border="0"
+            onclick="gridclick(5,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd5_2" id="grd5_2" border="0" onclick="gridclick(5,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd5_3" id="grd5_3" border="0"
+            onclick="gridclick(5,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd5_4" id="grd5_4" border="0" onclick="gridclick(5,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd5_5" id="grd5_5" border="0"
+            onclick="gridclick(5,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd5_6" id="grd5_6" border="0" onclick="gridclick(5,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd5_7" id="grd5_7" border="0"
+            onclick="gridclick(5,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd6_0" id="grd6_0"
+            border="0" onclick="gridclick(6,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd6_1" id="grd6_1" border="0"
+            onclick="gridclick(6,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd6_2" id="grd6_2" border="0" onclick="gridclick(6,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd6_3" id="grd6_3" border="0"
+            onclick="gridclick(6,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd6_4" id="grd6_4" border="0" onclick="gridclick(6,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd6_5" id="grd6_5" border="0"
+            onclick="gridclick(6,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd6_6" id="grd6_6" border="0" onclick="gridclick(6,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd6_7" id="grd6_7" border="0"
+            onclick="gridclick(6,7);"><br>
+            <img src="img/minesweeper/sqt0.gif" name="grd7_0" id="grd7_0"
+            border="0" onclick="gridclick(7,0);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd7_1" id="grd7_1" border="0"
+            onclick="gridclick(7,1);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd7_2" id="grd7_2" border="0" onclick="gridclick(7,2);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd7_3" id="grd7_3" border="0"
+            onclick="gridclick(7,3);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd7_4" id="grd7_4" border="0" onclick="gridclick(7,4);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd7_5" id="grd7_5" border="0"
+            onclick="gridclick(7,5);"><img src="img/minesweeper/sqt0.gif" name=
+            "grd7_6" id="grd7_6" border="0" onclick="gridclick(7,6);"><img src=
+            "img/minesweeper/sqt0.gif" name="grd7_7" id="grd7_7" border="0"
+            onclick="gridclick(7,7);"><br>
+            <!-- For Loop End --><!-- End Game Field -->
+          </td>
+          <td valign="right">
+            <img src="img/minesweeper/fielside.gif" width="12" height="128">
+          </td>
+          <td valign="right">
+            <img src="img/minesweeper/right.gif" width="5" height="128">
+          </td>
+        </tr>
+      </table><!-- End Mine Field --><!-- Footer -->
+      <table width="160" border="0" cellspacing="0" cellpadding="0">
+        <tr height="12">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td>
+            <img src="img/minesweeper/bl.gif">
+          </td>
+          <td>
+            <img src="img/minesweeper/footer.gif" width="128" height="12">
+          </td>
+          <td>
+            <img src="img/minesweeper/br.gif">
+          </td>
+          <td>
+            <img src="img/minesweeper/right.gif" height="12">
+          </td>
+        </tr>
+      </table><!-- Bottom -->
+      <table width="160" border="0" cellspacing="0" cellpadding="0">
+        <tr bgcolor="#BBBBBB" height="1">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="154" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+        <tr height="1">
+          <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td bgcolor="#888888"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="#888888"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+        <tr height="1">
+          <td width="1" bgcolor="black"></td>
+          <td width="1" bgcolor="black"></td>
+          <td width="1" bgcolor="black"></td>
+          <td bgcolor="black"></td>
+          <td width="1" bgcolor="black"></td>
+          <td width="1" bgcolor="black"></td>
+          <td width="1" bgcolor="black"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  </body>
+</html>
