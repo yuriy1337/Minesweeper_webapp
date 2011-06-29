@@ -456,7 +456,8 @@ function rollback(y, x){
             console.log(document.getElementById("grd" + y + "_" + x).src);
 						console.log("------");*/
 						var image = document.getElementById("grd" + y + "_" + x);
-            image.setAttribute("src",dir + "sq" + c + ".gif");
+            //image.setAttribute("src",dir + "sq" + c + ".gif");
+						image.className = "sq" + c;
             if (c == 0) {
                 rollback(y - 1, x - 1);
                 rollback(y - 1, x);

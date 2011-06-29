@@ -1,0 +1,59 @@
+.sq0{
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/minesweeper/sq0.gif");
+}
+
+.sq1{
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/minesweeper/sq1.gif");
+}
+
+.sq2{
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/minesweeper/sq2.gif");
+}
+
+.sq3{
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/minesweeper/sq3.gif");
+}
+
+.sq4{
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/minesweeper/sq4.gif");
+}
+
+.sq5{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sq5.gif");
+}
+
+.sq6{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sq6.gif");
+}
+
+.sq7{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sq7.gif");
+}
+
+.sq8{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sq8.gif");
+}
+
+.sqt0{
+	width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sqt0.gif");
+}

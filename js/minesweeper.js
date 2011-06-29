@@ -348,6 +348,7 @@ function buildgrid(){
     "->");
 	
 	s = generateGridClick();
+	console.log(s);
 	
     //document.write(s);
 	html += "<!-- For Loop Start -->";
@@ -400,11 +401,11 @@ function buildgrid(){
 function generateGridClick(){
 	var s = "";
     var x, y;
+		s += '<table border="0" cellspacing="0" cellpadding="0">';
     for (y = 0; y < gridy; ++y) {
+			s = s + "<tr>";
         for (x = 0; x < gridx; ++x) {
-            s = s + '<img src="' +
-            dir +
-            'sqt0.gif" name="grd' +
+            s = s + '<td class="sq0" name="grd' +
             y +
             '_' +
             x +
@@ -412,10 +413,11 @@ function generateGridClick(){
             y +
             '_' +
             x +
-            '" border=0 onclick="gridclick(' + y + ',' + x + ');"></a>'
+            '" border=0 onclick="gridclick(' + y + ',' + x + ');"></td>'
         }
-        s = s + "<br>";
+        s = s + "</tr>";
     }
+		s += "<table>"
 	return s;
 }
 

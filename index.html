@@ -5,6 +5,7 @@
     <title>Minesweeper</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="css/base_s40.css" type="text/css" />
+		<link rel="stylesheet" href="css/minesweeper.css" type="text/css" />
 	<script type="text/javascript" src="js/minesweeper2.js"></script>
     <meta name="Generator" content="Nokia WDE 3.2.0" />
   </head>
@@ -13,7 +14,13 @@
     <div class="header_background">
       <table summary="Default Header Table" class="header_table" cellpadding="0" cellspacing="0">
         <tr>
-          <td class="app_name">Minesweeper</td>
+          <td class="app_name">Minesweeper
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="sq0" onclick="this.className='sq1';"></td><td class="sq1"></td><td class="sq1"></td>
+						</tr>
+					</table>
+					</td>
           <td class="header_search"><img alt="Home" src="img/header_home.png" onclick="" /></td>
         </tr>
       </table>
@@ -333,110 +340,152 @@
             <img src='img/minesweeper/fielside.gif' width="12" height="128">
           </td>
           <td>
-            <!-- Game Field --><!-- For Loop Start --><img src=
-            "img/minesweeper/sqt0.gif" name="grd0_0" id="grd0_0" border="0"
-            onclick="gridclick(0,0);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd0_1" id="grd0_1" border="0" onclick="gridclick(0,1);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd0_2" id="grd0_2" border="0"
-            onclick="gridclick(0,2);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd0_3" id="grd0_3" border="0" onclick="gridclick(0,3);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd0_4" id="grd0_4" border="0"
-            onclick="gridclick(0,4);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd0_5" id="grd0_5" border="0" onclick="gridclick(0,5);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd0_6" id="grd0_6" border="0"
-            onclick="gridclick(0,6);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd0_7" id="grd0_7" border="0" onclick="gridclick(0,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd1_0" id="grd1_0"
-            border="0" onclick="gridclick(1,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd1_1" id="grd1_1" border="0"
-            onclick="gridclick(1,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd1_2" id="grd1_2" border="0" onclick="gridclick(1,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd1_3" id="grd1_3" border="0"
-            onclick="gridclick(1,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd1_4" id="grd1_4" border="0" onclick="gridclick(1,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd1_5" id="grd1_5" border="0"
-            onclick="gridclick(1,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd1_6" id="grd1_6" border="0" onclick="gridclick(1,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd1_7" id="grd1_7" border="0"
-            onclick="gridclick(1,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd2_0" id="grd2_0"
-            border="0" onclick="gridclick(2,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd2_1" id="grd2_1" border="0"
-            onclick="gridclick(2,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd2_2" id="grd2_2" border="0" onclick="gridclick(2,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd2_3" id="grd2_3" border="0"
-            onclick="gridclick(2,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd2_4" id="grd2_4" border="0" onclick="gridclick(2,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd2_5" id="grd2_5" border="0"
-            onclick="gridclick(2,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd2_6" id="grd2_6" border="0" onclick="gridclick(2,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd2_7" id="grd2_7" border="0"
-            onclick="gridclick(2,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd3_0" id="grd3_0"
-            border="0" onclick="gridclick(3,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd3_1" id="grd3_1" border="0"
-            onclick="gridclick(3,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd3_2" id="grd3_2" border="0" onclick="gridclick(3,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd3_3" id="grd3_3" border="0"
-            onclick="gridclick(3,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd3_4" id="grd3_4" border="0" onclick="gridclick(3,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd3_5" id="grd3_5" border="0"
-            onclick="gridclick(3,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd3_6" id="grd3_6" border="0" onclick="gridclick(3,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd3_7" id="grd3_7" border="0"
-            onclick="gridclick(3,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd4_0" id="grd4_0"
-            border="0" onclick="gridclick(4,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd4_1" id="grd4_1" border="0"
-            onclick="gridclick(4,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd4_2" id="grd4_2" border="0" onclick="gridclick(4,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd4_3" id="grd4_3" border="0"
-            onclick="gridclick(4,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd4_4" id="grd4_4" border="0" onclick="gridclick(4,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd4_5" id="grd4_5" border="0"
-            onclick="gridclick(4,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd4_6" id="grd4_6" border="0" onclick="gridclick(4,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd4_7" id="grd4_7" border="0"
-            onclick="gridclick(4,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd5_0" id="grd5_0"
-            border="0" onclick="gridclick(5,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd5_1" id="grd5_1" border="0"
-            onclick="gridclick(5,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd5_2" id="grd5_2" border="0" onclick="gridclick(5,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd5_3" id="grd5_3" border="0"
-            onclick="gridclick(5,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd5_4" id="grd5_4" border="0" onclick="gridclick(5,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd5_5" id="grd5_5" border="0"
-            onclick="gridclick(5,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd5_6" id="grd5_6" border="0" onclick="gridclick(5,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd5_7" id="grd5_7" border="0"
-            onclick="gridclick(5,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd6_0" id="grd6_0"
-            border="0" onclick="gridclick(6,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd6_1" id="grd6_1" border="0"
-            onclick="gridclick(6,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd6_2" id="grd6_2" border="0" onclick="gridclick(6,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd6_3" id="grd6_3" border="0"
-            onclick="gridclick(6,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd6_4" id="grd6_4" border="0" onclick="gridclick(6,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd6_5" id="grd6_5" border="0"
-            onclick="gridclick(6,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd6_6" id="grd6_6" border="0" onclick="gridclick(6,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd6_7" id="grd6_7" border="0"
-            onclick="gridclick(6,7);"><br>
-            <img src="img/minesweeper/sqt0.gif" name="grd7_0" id="grd7_0"
-            border="0" onclick="gridclick(7,0);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd7_1" id="grd7_1" border="0"
-            onclick="gridclick(7,1);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd7_2" id="grd7_2" border="0" onclick="gridclick(7,2);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd7_3" id="grd7_3" border="0"
-            onclick="gridclick(7,3);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd7_4" id="grd7_4" border="0" onclick="gridclick(7,4);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd7_5" id="grd7_5" border="0"
-            onclick="gridclick(7,5);"><img src="img/minesweeper/sqt0.gif" name=
-            "grd7_6" id="grd7_6" border="0" onclick="gridclick(7,6);"><img src=
-            "img/minesweeper/sqt0.gif" name="grd7_7" id="grd7_7" border="0"
-            onclick="gridclick(7,7);"><br>
+            <table border="0" cellspacing="0" cellpadding="0">
+				      <tr>
+				        <td class="sqt0" name="grd0_0" id="grd0_0" border="0" onclick=
+				        "gridclick(0,0);"></td>
+				        <td class="sqt0" name="grd0_1" id="grd0_1" border="0" onclick=
+				        "gridclick(0,1);"></td>
+				        <td class="sqt0" name="grd0_2" id="grd0_2" border="0" onclick=
+				        "gridclick(0,2);"></td>
+				        <td class="sqt0" name="grd0_3" id="grd0_3" border="0" onclick=
+				        "gridclick(0,3);"></td>
+				        <td class="sqt0" name="grd0_4" id="grd0_4" border="0" onclick=
+				        "gridclick(0,4);"></td>
+				        <td class="sqt0" name="grd0_5" id="grd0_5" border="0" onclick=
+				        "gridclick(0,5);"></td>
+				        <td class="sqt0" name="grd0_6" id="grd0_6" border="0" onclick=
+				        "gridclick(0,6);"></td>
+				        <td class="sqt0" name="grd0_7" id="grd0_7" border="0" onclick=
+				        "gridclick(0,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd1_0" id="grd1_0" border="0" onclick=
+				        "gridclick(1,0);"></td>
+				        <td class="sqt0" name="grd1_1" id="grd1_1" border="0" onclick=
+				        "gridclick(1,1);"></td>
+				        <td class="sqt0" name="grd1_2" id="grd1_2" border="0" onclick=
+				        "gridclick(1,2);"></td>
+				        <td class="sqt0" name="grd1_3" id="grd1_3" border="0" onclick=
+				        "gridclick(1,3);"></td>
+				        <td class="sqt0" name="grd1_4" id="grd1_4" border="0" onclick=
+				        "gridclick(1,4);"></td>
+				        <td class="sqt0" name="grd1_5" id="grd1_5" border="0" onclick=
+				        "gridclick(1,5);"></td>
+				        <td class="sqt0" name="grd1_6" id="grd1_6" border="0" onclick=
+				        "gridclick(1,6);"></td>
+				        <td class="sqt0" name="grd1_7" id="grd1_7" border="0" onclick=
+				        "gridclick(1,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd2_0" id="grd2_0" border="0" onclick=
+				        "gridclick(2,0);"></td>
+				        <td class="sqt0" name="grd2_1" id="grd2_1" border="0" onclick=
+				        "gridclick(2,1);"></td>
+				        <td class="sqt0" name="grd2_2" id="grd2_2" border="0" onclick=
+				        "gridclick(2,2);"></td>
+				        <td class="sqt0" name="grd2_3" id="grd2_3" border="0" onclick=
+				        "gridclick(2,3);"></td>
+				        <td class="sqt0" name="grd2_4" id="grd2_4" border="0" onclick=
+				        "gridclick(2,4);"></td>
+				        <td class="sqt0" name="grd2_5" id="grd2_5" border="0" onclick=
+				        "gridclick(2,5);"></td>
+				        <td class="sqt0" name="grd2_6" id="grd2_6" border="0" onclick=
+				        "gridclick(2,6);"></td>
+				        <td class="sqt0" name="grd2_7" id="grd2_7" border="0" onclick=
+				        "gridclick(2,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd3_0" id="grd3_0" border="0" onclick=
+				        "gridclick(3,0);"></td>
+				        <td class="sqt0" name="grd3_1" id="grd3_1" border="0" onclick=
+				        "gridclick(3,1);"></td>
+				        <td class="sqt0" name="grd3_2" id="grd3_2" border="0" onclick=
+				        "gridclick(3,2);"></td>
+				        <td class="sqt0" name="grd3_3" id="grd3_3" border="0" onclick=
+				        "gridclick(3,3);"></td>
+				        <td class="sqt0" name="grd3_4" id="grd3_4" border="0" onclick=
+				        "gridclick(3,4);"></td>
+				        <td class="sqt0" name="grd3_5" id="grd3_5" border="0" onclick=
+				        "gridclick(3,5);"></td>
+				        <td class="sqt0" name="grd3_6" id="grd3_6" border="0" onclick=
+				        "gridclick(3,6);"></td>
+				        <td class="sqt0" name="grd3_7" id="grd3_7" border="0" onclick=
+				        "gridclick(3,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd4_0" id="grd4_0" border="0" onclick=
+				        "gridclick(4,0);"></td>
+				        <td class="sqt0" name="grd4_1" id="grd4_1" border="0" onclick=
+				        "gridclick(4,1);"></td>
+				        <td class="sqt0" name="grd4_2" id="grd4_2" border="0" onclick=
+				        "gridclick(4,2);"></td>
+				        <td class="sqt0" name="grd4_3" id="grd4_3" border="0" onclick=
+				        "gridclick(4,3);"></td>
+				        <td class="sqt0" name="grd4_4" id="grd4_4" border="0" onclick=
+				        "gridclick(4,4);"></td>
+				        <td class="sqt0" name="grd4_5" id="grd4_5" border="0" onclick=
+				        "gridclick(4,5);"></td>
+				        <td class="sqt0" name="grd4_6" id="grd4_6" border="0" onclick=
+				        "gridclick(4,6);"></td>
+				        <td class="sqt0" name="grd4_7" id="grd4_7" border="0" onclick=
+				        "gridclick(4,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd5_0" id="grd5_0" border="0" onclick=
+				        "gridclick(5,0);"></td>
+				        <td class="sqt0" name="grd5_1" id="grd5_1" border="0" onclick=
+				        "gridclick(5,1);"></td>
+				        <td class="sqt0" name="grd5_2" id="grd5_2" border="0" onclick=
+				        "gridclick(5,2);"></td>
+				        <td class="sqt0" name="grd5_3" id="grd5_3" border="0" onclick=
+				        "gridclick(5,3);"></td>
+				        <td class="sqt0" name="grd5_4" id="grd5_4" border="0" onclick=
+				        "gridclick(5,4);"></td>
+				        <td class="sqt0" name="grd5_5" id="grd5_5" border="0" onclick=
+				        "gridclick(5,5);"></td>
+				        <td class="sqt0" name="grd5_6" id="grd5_6" border="0" onclick=
+				        "gridclick(5,6);"></td>
+				        <td class="sqt0" name="grd5_7" id="grd5_7" border="0" onclick=
+				        "gridclick(5,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd6_0" id="grd6_0" border="0" onclick=
+				        "gridclick(6,0);"></td>
+				        <td class="sqt0" name="grd6_1" id="grd6_1" border="0" onclick=
+				        "gridclick(6,1);"></td>
+				        <td class="sqt0" name="grd6_2" id="grd6_2" border="0" onclick=
+				        "gridclick(6,2);"></td>
+				        <td class="sqt0" name="grd6_3" id="grd6_3" border="0" onclick=
+				        "gridclick(6,3);"></td>
+				        <td class="sqt0" name="grd6_4" id="grd6_4" border="0" onclick=
+				        "gridclick(6,4);"></td>
+				        <td class="sqt0" name="grd6_5" id="grd6_5" border="0" onclick=
+				        "gridclick(6,5);"></td>
+				        <td class="sqt0" name="grd6_6" id="grd6_6" border="0" onclick=
+				        "gridclick(6,6);"></td>
+				        <td class="sqt0" name="grd6_7" id="grd6_7" border="0" onclick=
+				        "gridclick(6,7);"></td>
+				      </tr>
+				      <tr>
+				        <td class="sqt0" name="grd7_0" id="grd7_0" border="0" onclick=
+				        "gridclick(7,0);"></td>
+				        <td class="sqt0" name="grd7_1" id="grd7_1" border="0" onclick=
+				        "gridclick(7,1);"></td>
+				        <td class="sqt0" name="grd7_2" id="grd7_2" border="0" onclick=
+				        "gridclick(7,2);"></td>
+				        <td class="sqt0" name="grd7_3" id="grd7_3" border="0" onclick=
+				        "gridclick(7,3);"></td>
+				        <td class="sqt0" name="grd7_4" id="grd7_4" border="0" onclick=
+				        "gridclick(7,4);"></td>
+				        <td class="sqt0" name="grd7_5" id="grd7_5" border="0" onclick=
+				        "gridclick(7,5);"></td>
+				        <td class="sqt0" name="grd7_6" id="grd7_6" border="0" onclick=
+				        "gridclick(7,6);"></td>
+				        <td class="sqt0" name="grd7_7" id="grd7_7" border="0" onclick=
+				        "gridclick(7,7);"></td>
+				      </tr>
+				    </table>
             <!-- For Loop End --><!-- End Game Field -->
           </td>
           <td valign="right">
