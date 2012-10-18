@@ -4,13 +4,13 @@
     <name short="Minesweeper">Minesweeper</name>    
 
     <description>
-       Minesweeper Game!
+       An example Basic Series 40 web app runtime.
     </description>
     
     <!-- Note: Author href MUST BE Url encoded 
         @see http://en.wikipedia.org/wiki/Percent-encoding -->    
-    <author email="yuriy1337+minesweeper@gmail.com" href="http://lhc.servegame.com">
-        Yuriy Myronchenko
+    <author email="yuriy1337@gmail.com" href="http://www.example.com">
+        
     </author>
     
     <icon src="icon.png"/>
@@ -18,8 +18,8 @@
     <content src="index.html"/>
     
     <license>
-	   Copyright Foo Bar Corp, 2011.
+	   Copyright Foo Bar Corp, 2012.
     </license>
     
-   	<feature name="nokia://s40.nokia.com/SAWRT/1.0 " required="true" />
+   	<feature name="nokia://s40.nokia.com/SAWRT/2.0" required="true" />
 </widget>

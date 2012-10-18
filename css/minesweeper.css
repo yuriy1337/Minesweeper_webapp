@@ -53,7 +53,37 @@
 }
 
 .sqt0{
-	width: 16px;
+  width: 16px;
   height: 16px;
   background: url("../img/minesweeper/sqt0.gif");
+}
+
+.sqt1{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sqt1.gif");
+}
+
+.sqt1{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/sqt1.gif");
+}
+
+.mine{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/mine.gif");
+}
+
+.minered{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/minered.gif");
+}
+
+.nomine{
+  width: 16px;
+  height: 16px;
+  background: url("../img/minesweeper/nomine.gif");
 }

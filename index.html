@@ -11,20 +11,6 @@
   </head>
 
   <body>
-    <div class="header_background">
-      <table summary="Default Header Table" class="header_table" cellpadding="0" cellspacing="0">
-        <tr>
-          <td class="app_name">Minesweeper
-					<table border="0" cellspacing="0" cellpadding="0">
-						<tr>
-							<td class="sq0" onclick="this.className='sq1';"></td><td class="sq1"></td><td class="sq1"></td>
-						</tr>
-					</table>
-					</td>
-          <td class="header_search"><img alt="Home" src="img/header_home.png" onclick="" /></td>
-        </tr>
-      </table>
-    </div>
     <body onload="javascript:newgame()">
     <div align="center">
       <!-- Top Bar -->
@@ -119,13 +105,13 @@
           </td>
           <td>
             <!-- Control Panel -->
-            <table width="130" border="0" cellspacing="0" cellpadding="0">
+            <table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="#BBBBBB">
               <tr height="4" width="130">
                 <td bgcolor="#BBBBBB"></td>
               </tr>
             </table>
             <table width="130" border="0" cellspacing="0" cellpadding="0">
-              <tr height="26">
+              <tr height="26" bgcolor="#BBBBBB">
                 <td width="5" bgcolor="#BBBBBB"></td>
                 <td>
                   <!-- Mines Remaining -->
@@ -205,15 +191,10 @@
                   </table><!-- End Mines Remaining -->
                 </td>
                 <td bgcolor="#BBBBBB">
-                  <img height="1" src='img/minesweeper/a.gif' width=
-                  "6name='cplLeft'">
+                  <img height="1" src='img/minesweeper/a.gif' width="6" name='cplLeft'>
                 </td>
                 <td>
-                  <img src='img/minesweeper/btnsmile.gif' name='condition'
-                  onmousedown=
-                  'document.images.condition.src="img/minesweeper/btnsmil2.gif";'
-                  onmouseup=
-                  'document.images.condition.src="img/minesweeper/btnsmile.gif";location.reload();;'>
+                  <img src='img/minesweeper/btnsmile.gif' name='condition' onmousedown='document.images.condition.src="img/minesweeper/btnsmil2.gif";' onmouseup='document.images.condition.src="img/minesweeper/btnsmile.gif";location.reload();'>
                 </td>
                 <td width="4" bgcolor="#BBBBBB">
                   <img height="1" src='img/minesweeper/a.gif' width="4">
@@ -298,7 +279,7 @@
                 <td width="7" bgcolor="#BBBBBB"></td>
               </tr>
             </table>
-            <table width="130" border="0" cellspacing="0" cellpadding="0">
+            <table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="#BBBBBB">
               <tr height="3">
                 <td bgcolor="#BBBBBB"></td>
               </tr>

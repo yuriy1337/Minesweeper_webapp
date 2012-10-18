@@ -448,16 +448,11 @@ function rollback(y, x){
             shown[y][x] = 3;
             squaresleft--;
             //document.images["grd" + y + "_" + x].src = dir + "sq" + c + ".gif";
-            /*console.log("------");
-						console.log("Before");
-						console.log(document.getElementById("grd" + y + "_" + x).src);
-            document.getElementById("grd" + y + "_" + x).src = dir + "sq" + c + ".gif";
-						console.log("After");
-            console.log(document.getElementById("grd" + y + "_" + x).src);
-						console.log("------");*/
-						var image = document.getElementById("grd" + y + "_" + x);
+            //document.getElementById("grd" + y + "_" + x).src = dir + "sq" + c + ".gif";
+            //console.log(document.getElementById("grd" + y + "_" + x));
+            var image = document.getElementById("grd" + y + "_" + x);
             //image.setAttribute("src",dir + "sq" + c + ".gif");
-						image.className = "sq" + c;
+            image.className = "sq" + c;
             if (c == 0) {
                 rollback(y - 1, x - 1);
                 rollback(y - 1, x);
@@ -479,12 +474,19 @@ function dead(){
         for (x = 0; x < gridx; ++x) {
             if (mines[y][x]) {
                 if (shown[y][x] != 1) {
-                    document.images["grd" + y + "_" + x].src = dir + "mine.gif";
+                	var image = document.getElementById("grd" + y + "_" + x);
+                	if (image.className != "minered") {
+                		image.className = "mine";
+					}
+                    //document.images["grd" + y + "_" + x].src = dir + "mine.gif";
                 }
             }
             else 
                 if (shown[y][x] == 1) {
-                    document.images["grd" + y + "_" + x].src = dir + "nomine.gif";
+                	var image = document.getElementById("grd" + y + "_" + x);
+                    //image.setAttribute("src",dir + "nomine.gif");
+                	image.className = "nomine";
+                    //document.images["grd" + y + "_" + x].src = dir + "nomine.gif";
                 }
         }
     }
@@ -534,7 +536,9 @@ function gridclick(y, x){
         else 
             if (shown[y][x] != 1) {
                 if (mines[y][x]) {
-                    document.images["grd" + y + "_" + x].src = dir + "minered.gif";
+                	var image = document.getElementById("grd" + y + "_" + x);
+                    image.className = "minered";
+                    //document.images["grd" + y + "_" + x].src = dir + "minered.gif";
                     dead();
                 }
                 else {

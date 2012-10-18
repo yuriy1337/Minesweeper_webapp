@@ -452,10 +452,10 @@ function rollback(y, x){
             shown[y][x] = 3;
             squaresleft--;
             //document.images["grd" + y + "_" + x].src = dir + "sq" + c + ".gif";
-						//console.log(document.getElementById("grd" + y + "_" + x).src);
+			console.log(document.getElementById("grd" + y + "_" + x));
 						//document.getElementById("grd" + y + "_" + x).src = dir + "sq" + c + ".gif";
 						//console.log(document.getElementById("grd" + y + "_" + x).src);
-						var image = document.getElementById("grd" + y + "_" + x);
+						//var image = document.getElementById("grd" + y + "_" + x);
             image.setAttribute("src",dir + "sq" + c + ".gif");
             if (c == 0) {
                 rollback(y - 1, x - 1);
