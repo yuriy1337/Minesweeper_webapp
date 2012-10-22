@@ -14,7 +14,7 @@
     <body onload="javascript:newgame()">
     <div align="center">
       <!-- Top Bar -->
-      <table width="160" border="0" cellspacing="0" cellpadding="0">
+      <table width="224" border="0" cellspacing="0" cellpadding="0">
         <tr bgcolor="#BBBBBB" height="1">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="#BBBBBB"></td>
@@ -43,15 +43,14 @@
           <td width="1" bgcolor="black"></td>
         </tr>
       </table><!-- Title -->
-      <table border="0" cellspacing="0" cellpadding="0">
+      <table width="224" border="0" cellspacing="0" cellpadding="0">
         <tr height="18">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
           <td width="1" bgcolor="#BBBBBB"></td>
           <td bgcolor="#000088">
-            <img src='img/minesweeper/title.gif'><img src=
-            'img/minesweeper/a.gif' height="1" width="8" name=
-            'titleBarEmptySpace'>
+            <img src='img/minesweeper/title.gif' width="137">
+            <!--<img src='img/minesweeper/a.gif' height="1" width="8" name='titleBarEmptySpace'> -->
           </td>
           <td>
             <img src='img/minesweeper/buttons.gif'>
@@ -61,23 +60,27 @@
           <td width="1" bgcolor="black"></td>
         </tr>
       </table><!-- Menu Bar -->
-      <table border="0" cellspacing="0" cellpadding="0">
+      <table width="224" border="0" cellspacing="0" cellpadding="0">
         <tr height="20" bgcolor="#BBBBBB">
           <td width="1" bgcolor="#BBBBBB"></td>
+          <td width="1" bgcolor="white"></td>
+          <td width="1" bgcolor="#BBBBBB"></td>
           <td>
-            <img src='img/minesweeper/menu.gif'>
+          <td>
+            <img src='img/minesweeper/a.gif' height="1" width="131" name='menuBarEmptySpace'>
+            <!-- <img src='img/minesweeper/menu.gif'> -->
           </td>
           <td>
-            <img src='img/minesweeper/a.gif' height="1" width="86" name=
-            'menuBarEmptySpace'>
+            <img src='img/minesweeper/a.gif' height="1" width="86" name='menuBarEmptySpace'>
           </td>
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="#888888"></td>
           <td width="1" bgcolor="black"></td>
         </tr>
-      </table><!-- Mine Field -->
+      </table>
+      <!-- Mine Field -->
       <table border="0" cellspacing="0" cellpadding="0">
-        <tr height="11" width="160">
+        <tr height="11" width="192">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
           <td width="1" bgcolor="#BBBBBB"></td>
@@ -85,7 +88,7 @@
             <img src='img/minesweeper/tl.gif'>
           </td>
           <td>
-            <img src='img/minesweeper/header.gif' width="130" height="11">
+            <img src='img/minesweeper/header.gif' width="194" height="11">
           </td>
           <td>
             <img src='img/minesweeper/tr.gif'>
@@ -95,7 +98,7 @@
           </td>
         </tr>
       </table>
-      <table width="160" border="0" cellspacing="0" cellpadding="0">
+      <table border="0" cellspacing="0" cellpadding="0">
         <tr height="33">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
@@ -105,14 +108,14 @@
           </td>
           <td>
             <!-- Control Panel -->
-            <table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="#BBBBBB">
-              <tr height="4" width="130">
+            <table width="194" border="0" cellspacing="0" cellpadding="0" bgcolor="#BBBBBB">
+              <tr height="4" width="194">
                 <td bgcolor="#BBBBBB"></td>
               </tr>
             </table>
-            <table width="130" border="0" cellspacing="0" cellpadding="0">
+            <table width="194" border="0" cellspacing="0" cellpadding="0">
               <tr height="26" bgcolor="#BBBBBB">
-                <td width="5" bgcolor="#BBBBBB"></td>
+                <td width="23" bgcolor="#BBBBBB"></td>
                 <td>
                   <!-- Mines Remaining -->
                   <table width="41" border="0" cellspacing="0" cellpadding="0">
@@ -190,14 +193,16 @@
                     </tr>
                   </table><!-- End Mines Remaining -->
                 </td>
+                 
                 <td bgcolor="#BBBBBB">
-                  <img height="1" src='img/minesweeper/a.gif' width="6" name='cplLeft'>
+                  <img height="1" src='img/minesweeper/a.gif' width="4" name='cplLeft'>
                 </td>
+                
                 <td>
                   <img src='img/minesweeper/btnsmile.gif' name='condition' onmousedown='document.images.condition.src="img/minesweeper/btnsmil2.gif";' onmouseup='document.images.condition.src="img/minesweeper/btnsmile.gif";location.reload();'>
                 </td>
-                <td width="4" bgcolor="#BBBBBB">
-                  <img height="1" src='img/minesweeper/a.gif' width="4">
+                <td width="10" bgcolor="#BBBBBB">
+                  <img height="1" src='img/minesweeper/a.gif' width="10">
                 </td>
                 <td>
                   <!-- Elapsed Time -->
@@ -279,7 +284,7 @@
                 <td width="7" bgcolor="#BBBBBB"></td>
               </tr>
             </table>
-            <table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor="#BBBBBB">
+            <table width="194" border="0" cellspacing="0" cellpadding="0" bgcolor="#BBBBBB">
               <tr height="3">
                 <td bgcolor="#BBBBBB"></td>
               </tr>
@@ -294,7 +299,7 @@
         </tr>
       </table><!-- Separator -->
       <table border="0" cellspacing="0" cellpadding="0">
-        <tr height="11" width="160">
+        <tr height="11" width="240">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
           <td width="1" bgcolor="#BBBBBB"></td>
@@ -302,7 +307,7 @@
             <img src='img/minesweeper/ml.gif'>
           </td>
           <td>
-            <img src='img/minesweeper/separatr.gif' width="128" height="11">
+            <img src='img/minesweeper/separatr.gif' width="192" height="11">
           </td>
           <td>
             <img src='img/minesweeper/mr.gif'>
@@ -312,13 +317,13 @@
           </td>
         </tr>
       </table><!-- Mine Field -->
-      <table width="160" border="0" cellspacing="0" cellpadding="0">
-        <tr height="128">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr height="192">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
           <td width="1" bgcolor="#BBBBBB"></td>
           <td>
-            <img src='img/minesweeper/fielside.gif' width="12" height="128">
+            <img src='img/minesweeper/fielside.gif' width="12" height="192">
           </td>
           <td>
             <table border="0" cellspacing="0" cellpadding="0">
@@ -470,14 +475,16 @@
             <!-- For Loop End --><!-- End Game Field -->
           </td>
           <td valign="right">
-            <img src="img/minesweeper/fielside.gif" width="12" height="128">
+            <img src="img/minesweeper/fielside.gif" width="12" height="192">
           </td>
           <td valign="right">
-            <img src="img/minesweeper/right.gif" width="5" height="128">
+            <img src="img/minesweeper/right.gif" width="5" height="192">
           </td>
         </tr>
-      </table><!-- End Mine Field --><!-- Footer -->
-      <table width="160" border="0" cellspacing="0" cellpadding="0">
+      </table>
+      <!-- End Mine Field -->
+      <!-- Footer -->
+      <table width="224" border="0" cellspacing="0" cellpadding="0">
         <tr height="12">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
@@ -486,7 +493,7 @@
             <img src="img/minesweeper/bl.gif">
           </td>
           <td>
-            <img src="img/minesweeper/footer.gif" width="128" height="12">
+            <img src="img/minesweeper/footer.gif" width="192" height="12">
           </td>
           <td>
             <img src="img/minesweeper/br.gif">
@@ -496,7 +503,7 @@
           </td>
         </tr>
       </table><!-- Bottom -->
-      <table width="160" border="0" cellspacing="0" cellpadding="0">
+      <table width="224" border="0" cellspacing="0" cellpadding="0">
         <tr bgcolor="#BBBBBB" height="1">
           <td width="1" bgcolor="#BBBBBB"></td>
           <td width="1" bgcolor="white"></td>
@@ -525,6 +532,15 @@
           <td width="1" bgcolor="black"></td>
         </tr>
       </table>
+    </div>
+    <!--  Make the page longer so user can scroll down -->
+    <div>
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
     </div>
   </body>
   </body>
