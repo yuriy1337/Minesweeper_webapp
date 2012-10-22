@@ -3,9 +3,7 @@
     
     <name short="Minesweeper">Minesweeper</name>    
 
-    <description>
-       An example Basic Series 40 web app runtime.
-    </description>
+    <description>A minesweeper game, where the user must clear the 'minefield' and find all locations of mines.</description>
     
     <!-- Note: Author href MUST BE Url encoded 
         @see http://en.wikipedia.org/wiki/Percent-encoding -->    
@@ -13,7 +11,7 @@
         
     </author>
     
-    <icon src="icon.png"/>
+    <icon src="img/minesweeper/winmineicon.gif"/>
 
     <content src="index.html"/>
     
